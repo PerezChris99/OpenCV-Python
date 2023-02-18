@@ -7,11 +7,6 @@ img = cv2.imread('assets/mike.jpg', 1)
 img = cv2.resize(img, (400, 400))
 #rotating the image
 img = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
-
-
-
-
-
 '''
 -1, cv2.IMREAD_COLOR : loads a color image. Any transparency of the image will be ignored.
 0, cv2.IMREAD_GRAYSCALE : loads a grayscale image./loads an image in grayscale mode.
