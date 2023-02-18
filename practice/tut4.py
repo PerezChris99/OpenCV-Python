@@ -8,6 +8,8 @@ while True:
     width = int(cap.get(3))
     height = int(cap.get(4))
 
+    img = cv2.line(frame, (0, 0), (width, height), (255, 0, 0), 10)
+
     cv2.imshow('frame', frame)
 
     if cv2.waitKey(1) == ord('q'):
