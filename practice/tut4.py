@@ -8,7 +8,15 @@ while True:
     width = int(cap.get(3))
     height = int(cap.get(4))
 
-    img = cv2.line(frame, (0, 0), (width, height), (255, 0, 0), 10)
+    img = cv2.line(frame, (0, 0), (width, height), (255, 0, 0), 10) #adds a diagonal line across the image
+    img = cv2.line(frame, (0, height), (width, 0), (0, 255, 0), 5) #adds a diagonal line across the image
+    img = cv2.rectangle(img, (100, 100), (200, 200), (128, 128, 128), 5)
+    img = cv2.circle(img, (300, 300), 60, (0, 0, 255), -1)
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    img = cv2.putText(img, 'God is Great', (200, height -10), font, 1, (0, 0, 0), 5, cv2.LINE_AA)
+
+    
+    cv2.imshow('frame', img)
 
     cv2.imshow('frame', frame)
 
