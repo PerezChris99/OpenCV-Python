@@ -26,3 +26,4 @@ while cam.isOpened():
         break
     cv2.imshow('Security Camera', frame1)
 
+cv2.destroyAllWindows()
